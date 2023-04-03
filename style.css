@@ -1,9 +1,16 @@
-span{
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 200ms;
+}
+
+span {
     cursor: pointer;
     font-size: 12vw;
     line-height: 1.3;
     color: rgba(207, 207, 207, 0);
-    transition: 200ms;
+
     user-select: none;
     background-color: rgba(255, 255, 255, 0.103);
     font-family: 'Courier New', Courier, monospace;
@@ -14,21 +21,23 @@ span{
     background-size: contain;
 }
 
-span:hover{
+span:hover {
     background-color: rgba(255, 240, 207, 0.205);
     color: rgba(172, 172, 172, 0);
 }
 
-#board{
-    margin-left: 25%;
+#board {
+    margin-left: 27%;
+    margin-top: 2vh;
 }
-body{
+
+body {
     background-image: url("img/plank.png");
     background-size: 25%;
 
 }
 
-#end{
+#end {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -36,14 +45,36 @@ body{
     display: none;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+#smile {
+    top: 10%;
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    left: 0;
+
 }
 
-#smile{
-    width: auto;
-    height: 100%;
+
+#winner {
+    font-size: 20vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+
+
+#playagain {
+    font-size: 10vw;
+    font-family: monospace;
     position: absolute;
+    right: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    color: rgb(161, 0, 0);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#playagain:hover{
+    color: rgb(255, 153, 153);
+    background-color: rgb(41, 34, 34);
 }
